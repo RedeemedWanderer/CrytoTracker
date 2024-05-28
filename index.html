@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Watchlist</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Track real-time cryptocurrency prices and manage your watchlist easily. Stay updated with the latest market trends.">
+</head>
+<body>
+    <header>
+        <h1>Crypto Watchlist Designed by RM</h1>
+    </header>
+    <main>
+        <section class="form-group">
+            <label for="crypto">Cryptocurrency:</label>
+            <select id="crypto">
+                <option value="bitcoin">Bitcoin</option>
+                <option value="ethereum">Ethereum</option>
+                <option value="litecoin">Litecoin</option>
+                <option value="dogecoin">Dogecoin</option>
+                <option value="cardano">Cardano</option>
+            </select>
+            <button onclick="addToWatchlist()">Add to Watchlist</button>
+        </section>
+        <section>
+            <h2>Watchlist</h2>
+            <div id="watchlist" class="watchlist"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
